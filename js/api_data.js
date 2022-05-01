@@ -340,45 +340,21 @@ const api_data = () => {
                 elem += `</div>`;
     
                 switch (chargeTp) {
-                    case '1':
-                        elem += `<p>충전기타입 : 완속</p>`;
-                        break;
-                    case '2':
-                        elem += `<p>충전기타입 : 급속</p>`;
-                        break;
+                    case '1': elem += `<p>충전기타입 : 완속</p>`;break;
+                    case '2': elem += `<p>충전기타입 : 급속</p>`;break;
                 }
     
                 switch (cpTp) {
-                    case '1':
-                        elem += `<p>충전방식 : B타입(5핀)</p>`;
-                        break;
-                    case '2':
-                        elem += `<p>충전방식 : C타입(5핀)</p>`;
-                        break;
-                    case '3':
-                        elem += `<p>충전방식 : BC타입(5핀)</p>`;
-                        break;
-                    case '4':
-                        elem += `<p>충전방식 : BC타입(7핀)</p>`;
-                        break;
-                    case '5':
-                        elem += `<p>충전방식 : DC차데모</p>`;
-                        break;
-                    case '6':
-                        elem += `<p>충전방식 : AC3상</p>`;
-                        break;
-                    case '7':
-                        elem += `<p>충전방식 : DC콤보</p>`;
-                        break;
-                    case '8':
-                        elem += `<p>충전방식 : DC차데모+DC콤보</p>`;
-                        break;
-                    case '9':
-                        elem += `<p>충전방식 : DC차데모+AC3상</p>`;
-                        break;
-                    case '10':
-                        elem += `<p>충전방식 : DC차데모+DC콤보+AC3상</p>`;
-                        break;
+                    case '1': elem += `<p>충전방식 : B타입(5핀)</p>`; break;
+                    case '2': elem += `<p>충전방식 : C타입(5핀)</p>`; break;
+                    case '3': elem += `<p>충전방식 : BC타입(5핀)</p>`; break;
+                    case '4': elem += `<p>충전방식 : BC타입(7핀)</p>`; break;
+                    case '5': elem += `<p>충전방식 : DC차데모</p>`; break;
+                    case '6': elem += `<p>충전방식 : AC3상</p>`; break;
+                    case '7': elem += `<p>충전방식 : DC콤보</p>`; break;
+                    case '8': elem += `<p>충전방식 : DC차데모+DC콤보</p>`; break;
+                    case '9': elem += `<p>충전방식 : DC차데모+AC3상</p>`; break;
+                    case '10': elem += `<p>충전방식 : DC차데모+DC콤보+AC3상</p>`; break;
                 }
     
                 elem += `<div class="hide">`
@@ -650,7 +626,6 @@ const api_data = () => {
         else 
         {
             $(this).addClass('on').siblings().removeClass('on');
-
             if (click_flag) 
             {
                 if (first >= last) 
@@ -680,6 +655,11 @@ const api_data = () => {
             click_flag = true;
         }
     })
+
+    if ($('.List li').hasClass('on')){
+        $('.List .arrow').css({transform:'rotate(180deg)'})
+    }
+
 }
 
 export default api_data
