@@ -50,7 +50,7 @@ $(window).on('scroll', function(){
         $('body').append('<div class="gotop"><a href="#"><i class="fa-solid fa-angle-up"></i></a></div><div class="gobottom"><a href="#"><i class="fa-solid fa-angle-down"></i></a></div>');
         $('.gotop').css({
             position: 'fixed',
-            right: '50px',
+            right: '30px',
             bottom: '100px',
             fontSize: '30px',
             opacity: '0',
@@ -61,7 +61,7 @@ $(window).on('scroll', function(){
         }).animate( { opacity:1 }, 100);
         $('.gobottom').css({
             position: 'fixed',
-            right: '50px',
+            right: '30px',
             bottom: '30px',
             fontSize: '30px',
             opacity: '0',

@@ -1,6 +1,4 @@
-import {
-    sidos
-} from './sido.js';
+import {sidos} from './sido.js';
 
 const api_data = () => {
     var isRun = false;

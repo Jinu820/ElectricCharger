@@ -119,8 +119,8 @@
   }
   #header #nav .depth1 li a {
     display: inline-block;
-    font-size: 16px;
-    padding: 20px 20px;
+    font-size: 12px;
+    padding: 20px 15px;
     font-weight: 400;
     position: relative;
     color: #fff;

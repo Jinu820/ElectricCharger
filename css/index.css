@@ -484,7 +484,7 @@ body {
 }
 
 #li3 .sect2 {
-  margin-top: 170px;
+  margin-top: 100px;
 }
 
 #li3 .sect2 table {
@@ -492,7 +492,7 @@ body {
 }
 
 #li3 .sect3 {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 #li3 .sect3 .image {
@@ -806,6 +806,8 @@ body {
   }
 }
 
+/* 태블릿 사이즈 */
+
 @media screen and (max-width:1024px) {
   /* li1 */
   #action #con1 {
@@ -848,7 +850,7 @@ body {
   
   /* li4 */
   #li4 #Content .top_bar .select_box .select_list select {
-    width: 130px;
+    width: 200px;
     height: 50px;
     border: 2px solid #2277ee;
     text-align: center;
@@ -863,9 +865,38 @@ body {
     text-align: center;
   }
 }
+/* 모바일 사이즈 */
 @media screen and (max-width:768px) {
   body {
     font-size: 0.8em;
+  }
+
+  #section .li h1 {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 30px;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+    background-position: 0 88%;
+    -webkit-transition: background-size 0.25s ease-in;
+    transition: background-size 0.25s ease-in;
+  }
+
+  /* li2 */
+
+  #li2 .Content .section h2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    display: inline-block;
+    margin-right: 0px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  #li2 .Content .section h2.on {
+    border-bottom: 3px solid #2277ee;
+    opacity: 1;
   }
   
   /* li3 */
@@ -891,8 +922,8 @@ body {
   }
   
   #li3 .sect1 .sec1Bottom table {
-    width: 470px;
-    margin-top: 70px;
+    width: 90%;
+    margin-top: 40px;
   }
 
   /* 충전기 이미지파트 */
@@ -905,10 +936,33 @@ body {
   #li4 #Content .top_bar {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-bottom: 20px;
-    padding: 30px 0;
+    padding: 10px 0 20px;
     border: 5px solid #2277ee;
   }
+
+  #li4 #Content .top_bar .select_box .select_list span {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  /* #li4 #Content .top_bar .select_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  } */
+
+  #li4 #Content .top_bar .select_box  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   #li4 #Content .top_bar_2 .radio_box{
     display:unset;
   }
@@ -917,6 +971,27 @@ body {
     padding-right: 0px;
   }
 
+  #li4 #Content .top_bar_2 .count {
+    padding-left: 0px;
+    vertical-align: middle;
+  }
+
+  #li4 #Content .top_bar .select_box .select_list select {
+    width: 80vw;
+    height: 50px;
+    border: 2px solid #2277ee;
+    text-align: center;
+  } 
+  #li4 #Content .top_bar .select_box .btn button {
+    font-size: 20px;
+    width: 80vw;
+    height: 30px;
+    background: #2277ee;
+    color: #fff;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+  }
 
   #li4 #Content .top_bar_2 .selectNum{
     padding-right: 0px;
