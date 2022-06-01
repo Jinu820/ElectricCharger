@@ -127,9 +127,7 @@ body {
 }
 
 #action #con1 #con1img {
-  background: url(../img/li1.1.jpg) no-repeat center;
   width: 60%;
-  height: 450px;
 }
 
 #action #con1 #ex {
@@ -237,13 +235,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 50px;
 }
 
 #situation #Con3Images #con3img1 {
-  background: url(../img/li1.3.jpg) no-repeat center;
   width: 100%;
-  height: 600px;
+  margin-bottom: 50px;
 }
 
 /* #situation #Con3Images #con3img2 {
@@ -835,15 +831,16 @@ body {
     justify-content: space-evenly;
     align-items: center ;
   }
+
   
-  #action #con1 #con1img {
-    background: url(../img/li1.1.jpg) no-repeat center;
+  #action #con1 #con1img > img {
     width: 100%;
-    height: 450px;
+    margin: 30px 0;
   }
   
   #action #con1 #ex {
     width: 100%;
+    padding: 0 15px ;
     line-height: 1.7em;
     display: flex;
     flex-direction: column;
@@ -905,6 +902,10 @@ body {
   }
 
   /* li2 */
+
+  #li2 .Content .section {
+    padding: 0px;
+  }
 
   #li2 .Content .section h2 {
     font-size: 16px;
