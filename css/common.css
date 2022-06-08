@@ -115,7 +115,7 @@
   #section .li {
     border: none;
     /* height: 1000px; */
-    padding: 20px;
+    padding: 50px;
   }
   #header #nav .depth1 li a {
     display: inline-block;
@@ -134,6 +134,12 @@
 @media screen and (max-width:768px) {
   #header h1 img {
     width: 60px;
+  }
+
+  #section .li {
+    border: none;
+    /* height: 1000px; */
+    padding: 20px;
   }
 
   

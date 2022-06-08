@@ -797,6 +797,8 @@ body {
 
 @media screen and (max-width:1024px) {
 
+
+
   /* 메인 페이지 스타일 */
   #container #maincontent {
     background-image: url(../img/mainimage1.png);
