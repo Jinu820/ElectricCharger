@@ -105,9 +105,9 @@ body {
 #container h1 {
   margin-bottom: 50px;
 }
-#action h3 {
-  font-size: 22px; font-weight: 500;
-  padding: 0 20px;
+#action > p {
+  font-size: 18px; font-weight: 500;
+  padding: 0 10px;
 }
 #action h3 > span {
   border-bottom: 2px solid #2277ee;
@@ -145,12 +145,12 @@ body {
           justify-content: center;
 }
 
-#action #con1 #ex li {
+#action #con1 #ex p {
   padding-bottom: 20px;
-  font-size: 18px;
+  font-size: 14px;
   position: relative;
 }
-#action #con1 #ex li::after {
+#action #con1 #ex p::after {
   content: '';
   position: absolute;
   left: -15px;
@@ -160,7 +160,7 @@ body {
   background: #2277ee;
   transition: all .3s;
 }
-#action #con1 #ex li:hover::after {
+#action #con1 #ex p:hover::after {
   width: 4px;
 }
 
@@ -169,33 +169,22 @@ body {
 }
 
 #structure #con2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 #structure #con2 #con2img {
-  background: url(../img/li1.2.jpg) no-repeat center;
-  width: 105%;
-  height: 558px;
+  width: 40%;
 }
 
 #structure #con2 #further {
-  margin-top: 0px;
+  width: 50%;
 }
 
 #structure #con2 #further #charge {
   border: 3px solid #466878;
   padding: 30px;
-  -webkit-box-shadow: 5px 5px #bfd3dc;
-          box-shadow: 5px 5px #bfd3dc;
+  box-shadow: 5px 5px #bfd3dc;
 }
 
 #structure #con2 #further #charge li {
@@ -204,7 +193,7 @@ body {
 }
 
 #structure #con2 #further #battery {
-  margin-top: 80px;
+  margin-top: 60px;
   border: 3px solid #466878;
   padding: 30px;
   -webkit-box-shadow: 5px 5px #bfd3dc;
@@ -247,16 +236,20 @@ body {
   width: 100%;
   height: 600px;
 } */
+
 #feature h3 {
   font-size: 22px; font-weight: 500;
 }
-#feature .depth1 .depth2 {
-  text-indent: 30px;
-  padding: 20px 0 20px 0;
+#feature .featureTitle {
+  font-size: 24px;
+  padding-bottom: 20px;
 }
 
-#feature .depth1 .depth2 li {
-  padding-bottom: 15px;
+#feature > div  {
+  padding-bottom: 25px;
+}
+#feature > div > p {
+  padding-bottom: 10px;
 }
 
 /* li_2 스타일 */
@@ -899,6 +892,22 @@ body {
     background-position: 0 88%;
     -webkit-transition: background-size 0.25s ease-in;
     transition: background-size 0.25s ease-in;
+  }
+
+  #structure #con2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #structure #con2 #con2img {
+    width: 60%;
+    margin-bottom: 50px;
+  }
+  
+  #structure #con2 #further {
+    width: 100%;
   }
 
   /* li2 */
