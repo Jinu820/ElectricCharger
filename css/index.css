@@ -23,6 +23,7 @@ body {
 #section .li h1 {
   display: inline-block;
   padding-right: 20px;
+  margin-bottom: 50px;
   font-size: 40px;
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   background-repeat: no-repeat;
@@ -102,11 +103,11 @@ body {
 
 
 /* li_1 스타일 */
-#container h1 {
+/* #container h1 {
   margin-bottom: 50px;
-}
+} */
 #action > p {
-  font-size: 18px; font-weight: 500;
+  font-size: 16px; font-weight: 500;
   padding: 0 10px;
 }
 #action h3 > span {
@@ -159,9 +160,6 @@ body {
   height: 50%;
   background: #2277ee;
   transition: all .3s;
-}
-#action #con1 #ex p:hover::after {
-  width: 4px;
 }
 
 #structure {
@@ -839,6 +837,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
   }
   /* li2 */
   #li2 .Content .section .head {
@@ -882,10 +881,14 @@ body {
     font-size: 0.8em;
   }
 
+  /* h1 공통 디자인 */
+
+  
   #section .li h1 {
     display: inline-block;
     padding-right: 20px;
-    font-size: 30px;
+    font-size: 24px;
+    margin-bottom: 20px;
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     background-repeat: no-repeat;
     background-size: 100% 30%;
@@ -893,6 +896,8 @@ body {
     -webkit-transition: background-size 0.25s ease-in;
     transition: background-size 0.25s ease-in;
   }
+
+  /* li1 */
 
   #structure #con2 {
     display: flex;
@@ -903,11 +908,15 @@ body {
   
   #structure #con2 #con2img {
     width: 60%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   
   #structure #con2 #further {
     width: 100%;
+  }
+
+  #structure #con2 #further #battery {
+    margin-top: 30px;
   }
 
   /* li2 */
@@ -957,6 +966,16 @@ body {
     margin-top: 40px;
   }
 
+  #li3 .sect1 .one h2 {
+    border-bottom: 2px solid #2277ee;
+    font-size: 18px;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 120px;
+  }
   /* 충전기 이미지파트 */
   /* #li3 .sect3 .image img {
     width: 150px;
